@@ -1,7 +1,7 @@
 # NameTools - Velocity 玩家前缀管理插件
 ![Velocity](https://img.shields.io/badge/Velocity-3.x-blue) ![Java](https://img.shields.io/badge/Java-11-green) ![License](https://img.shields.io/badge/License-GPLv3-green.svg)
 
-**NameTools** 是一个专为 Minecraft Velocity 服务端设计的玩家前缀管理插件。支持通过指令动态设置玩家前缀，并兼容颜色代码（如 `&b[VIP]`），可与跨服聊天插件 **ChatTools** 无缝协同。
+**NameTools** 是一个专为 Minecraft Velocity 服务端设计的玩家前缀管理插件。支持通过指令动态设置玩家前缀，并兼容颜色代码（如 `&b[VIP]`），可与跨服聊天插件 [**ChatTools**](https://github.com/NSrank/ChatTools) 无缝协同。
 
 > **注意**：本插件由 AI 开发，旨在简化玩家身份标识管理。
 
@@ -17,7 +17,7 @@
     - 管理员权限节点 `nametools.command.set` 和 `nametools.command.del`。
 - **兼容性**：
     - 适配 Velocity 3.3+ 和 Minecraft 1.16+。
-    - 与 **ChatTools** 协同显示跨服前缀（需 ChatTools 1.2+）。
+    - 与 [**ChatTools**](https://github.com/NSrank/ChatTools) 协同显示跨服前缀（需 ChatTools 1.4+）。
 
 ---  
 
@@ -91,7 +91,7 @@ prefixes:
 # NameTools - Player Prefix Management Plugin for Velocity
 ![Velocity](https://img.shields.io/badge/Velocity-3.x-blue) ![Java](https://img.shields.io/badge/Java-11-green) ![License](https://img.shields.io/badge/License-GPLv3-green.svg)
 
-**NameTools** is a player prefix management plugin designed for Minecraft Velocity servers. It supports dynamically setting player prefixes via commands with color codes (e.g., `&b[VIP]`) and seamlessly integrates with cross-server chat plugins like **ChatTools**.
+**NameTools** is a player prefix management plugin designed for Minecraft Velocity servers. It supports dynamically setting player prefixes via commands with color codes (e.g., `&b[VIP]`) and seamlessly integrates with cross-server chat plugins like [**ChatTools**](https://github.com/NSrank/ChatTools).
 
 > **Note**: This plugin is AI-developed to simplify player identity management.
 
@@ -107,7 +107,7 @@ prefixes:
     - Admin permission nodes: `nametools.command.set` and `nametools.command.del`.
 - **Compatibility**:
     - Works with Velocity 3.3+ and Minecraft 1.16+.
-    - Displays prefixes across servers with **ChatTools** (requires ChatTools 1.2+).
+    - Displays prefixes across servers with [**ChatTools**](https://github.com/NSrank/ChatTools) (requires ChatTools 1.4+).
 
 ---  
 
