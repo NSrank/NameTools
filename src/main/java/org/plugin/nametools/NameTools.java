@@ -89,6 +89,14 @@ public class NameTools {
         return prefix != null ? LegacyComponentSerializer.legacyAmpersand().deserialize(prefix) : null;
     }
 
+    public ProxyServer getServer() {
+        return server;
+    }
+
+    public Map<String, String> getPlayerPrefixes() {
+        return playerPrefixes;
+    }
+
     private void loadConfig() {
         if (Files.notExists(configPath)) {
             try (InputStream in = getClass().getResourceAsStream("/config.yml")) {
