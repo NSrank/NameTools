@@ -1,0 +1,25 @@
+{
+  "id": "nametools",
+  "name": "NameTools",
+  "version": "1.0",
+  "description": "玩家前缀管理插件（支持颜色代码 &b）",
+  "authors": ["NSrank & Qwen2.5-Max"],
+  "main": "org.plugin.nametools.NameTools",
+  "dependencies": [
+    {
+      "id": "velocity",
+      "version": "3.4.0"
+    }
+  ],
+  "commands": {
+    "nametools": {
+      "description": "管理玩家前缀",
+      "aliases": ["nt"],
+      "permission": "nametools.command"
+    },
+    "reload": {
+      "description": "重载插件配置",
+      "permission": "nametools.reload"
+    }
+  }
+}
