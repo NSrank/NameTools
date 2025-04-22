@@ -26,7 +26,7 @@ import java.util.concurrent.ConcurrentHashMap;
 @Plugin(
         id = "nametools",
         name = "NameTools",
-        version = "1.0"
+        version = "1.1"
 )
 public class NameTools {
     private final ProxyServer server;
@@ -42,7 +42,7 @@ public class NameTools {
         loadConfig();
         logger.info("===================================");
         logger.info("NameTools 插件已加载");
-        logger.info("版本：1.0 | 作者：NSrank & Qwen2.5-Max");
+        logger.info("版本：1.1 | 作者：NSrank & Qwen2.5-Max");
         logger.info("===================================");
     }
 
@@ -105,12 +105,16 @@ public class NameTools {
                 logger.info("默认配置文件已生成");
             } catch (IOException e) {
                 logger.error("配置文件创建失败", e);
+                return;
             }
         }
+
         Yaml yaml = new Yaml();
         try (InputStream in = Files.newInputStream(configPath)) {
-            Map<String, String> prefixes = yaml.loadAs(in, Map.class);
-            if (prefixes != null) playerPrefixes.putAll(prefixes);
+            // 修正点：读取顶层 Map
+            Map<String, Map<String, String>> data = yaml.load(in);
+            Map<String, String> prefixes = data != null ? data.get("prefixes") : new HashMap<>();
+            playerPrefixes.putAll(prefixes);
         } catch (IOException e) {
             logger.error("配置加载失败", e);
         }

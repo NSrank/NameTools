@@ -1,2 +1,2 @@
- //玩家名前缀配置
-prefixes: {}
+prefixes:
+  Steve: "&b[VIP]"

@@ -1,7 +1,7 @@
 {
   "id": "nametools",
   "name": "NameTools",
-  "version": "1.0",
+  "version": "1.1",
   "description": "玩家前缀管理插件（支持颜色代码 &b）",
   "authors": ["NSrank & Qwen2.5-Max"],
   "main": "org.plugin.nametools.NameTools",
